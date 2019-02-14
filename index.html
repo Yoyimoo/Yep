@@ -2,6 +2,14 @@
 <head>
 	<title> Yes please</title>
 	<body><H1> No thanks</H1>
+<p id="demo"></p>
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+</script>
 	</body>
-	
 </html>
