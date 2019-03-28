@@ -1,18 +1,27 @@
+<!Doctype HTML>
 <html>
 <head>
-	<title> Jason Amidon</title>
-	<body> <Button>Hi</Button><br><hr><br>
-		<button value="Refresh Page" onClick="window.location.reload()"> Hello </button><br><hr><br>
-		<!--  Thank you for reading this! Hope you like it (Jason)-->
-			<button> Hello </Button>
-<p id="demo"></p>
-<script>
-try {
-  alert("Samantha shut up.");
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.message;
-}
-</script>
-	</body>
+    <meta charset="utf-8" />
+    <title>Slither.io Clone - Loonride Example</title>
+    <script src="lib/phaser.min.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/snake.js"></script>
+    <script src="src/playerSnake.js"></script>
+    <script src="src/botSnake.js"></script>
+    <script src="src/eye.js"></script>
+    <script src="src/eyePair.js"></script>
+    <script src="src/shadow.js"></script>
+    <script src="src/food.js"></script>
+    <script src="src/util.js"></script>
+</head>
+<body>
+    <script>
+    (function() {
+        var game = new Phaser.Game(800, 500, Phaser.AUTO, null);
+        game.state.add('Game', Game);
+        game.state.start('Game');
+    })();
+    </script>
+</body>
 </html>
+
