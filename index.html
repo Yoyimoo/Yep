@@ -4,6 +4,21 @@
     <title>Yes</title>
    </head>
     <body><p> No</p>
+     <br><hr>   <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
 </body>
 </html>
 
