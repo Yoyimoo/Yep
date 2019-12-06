@@ -1,1 +1,1 @@
-Don't read this.
+I bet $5 you'll read this.
